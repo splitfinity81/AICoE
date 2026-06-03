@@ -55,6 +55,9 @@ The offer also runs across **three AI surfaces** — M365 Copilot, Copilot Studi
 | [`AI-CoE-Sector-Briefing-Mining.pptx`](AI-CoE-Sector-Briefing-Mining.pptx) | PowerPoint (9 slides) | Mining executive briefing — DMRE / MHSA / DFFE / NEMA, safety & ESG, predictive maintenance, geological |
 | [`AI-CoE-Sector-Briefing-Public-Sector.pptx`](AI-CoE-Sector-Briefing-Public-Sector.pptx) | PowerPoint (9 slides) | Public sector / SOE executive briefing — PFMA / MFMA / AGSA / SITA, citizen services, document workflows, programme management |
 | [`AI-CoE-Sector-Briefing-Healthcare.pptx`](AI-CoE-Sector-Briefing-Healthcare.pptx) | PowerPoint (9 slides) | Healthcare executive briefing — HPCSA / CMS / NHI / SAHPRA, clinical documentation, pre-auth, ops |
+| [`AI-CoE-Model-Choice-OnePager.docx`](AI-CoE-Model-Choice-OnePager.docx) | Word | Multi-model positioning: Foundry catalog (OpenAI, Anthropic, Llama, Mistral, Cohere, NVIDIA NIM, Hugging Face, Phi) under one identity/billing/governance/RAI plane; 5 selection criteria; 3-tier router pattern. Anchors objection 3.5. Generated from `ai-coe-model-choice-guide.md` via `build_model_choice_onepager.py` |
+| [`AI-CoE-Change-Readiness-Instrument.xlsx`](AI-CoE-Change-Readiness-Instrument.xlsx) | Excel (5 sheets) | ADKAR-based change-readiness scoring across 5 dimensions (Sponsorship · Workforce · Use-case clarity · Enablement capacity · Measurement); auto-computed Green/Amber/Red band; steering-committee output sheet. Companion to `ai-coe-change-management-methodology.md` |
+| [`AI-CoE-Horizon-Benchmark.xlsx`](AI-CoE-Horizon-Benchmark.xlsx) | Excel (5 sheets) | Comparator on top of Horizon Assessment — input customer's six pillar scores, returns percentile per pillar against v1 RSA cohort (N=20). One-page "Your AI Horizon vs RSA peers" output. Companion to `ai-coe-horizon-benchmark-dataset.md` |
 
 ### Internal delivery artefacts
 
@@ -67,6 +70,7 @@ The offer also runs across **three AI surfaces** — M365 Copilot, Copilot Studi
 | [`AI-CoE-How-To-Use.pptx`](AI-CoE-How-To-Use.pptx) | PowerPoint | Internal enablement deck for sellers and CSAs — how to use this pack |
 | [`AI-CoE-VBD-Reference-Deck.pptx`](AI-CoE-VBD-Reference-Deck.pptx) | PowerPoint (25 slides) | The CSU-wide AI VBD menu — generated from `csu-ai-vbd-reference-report.md` via `build_vbd_deck.py` |
 | [`AI-CoE-Objection-Handling.pptx`](AI-CoE-Objection-Handling.pptx) | PowerPoint (21 slides) | Internal seller reference — 34 recurring customer objections mapped to the 5+1 Pillars with response, proof point, and escalation owner. Generated from `ai-coe-objection-handling-report.md` via `build_objection_deck.py` |
+| [`AI-CoE-GenAIOps-Reference.docx`](AI-CoE-GenAIOps-Reference.docx) | Word | Productised VBD C13: agent registry pattern (Dataverse `coe_AgentRegistry`, 13 fields), 6-layer reference architecture, 5 lifecycle gates (G-Build → G-Eval → G-Release → G-Monitor → G-Retire), eval harness blueprint, drift/safety/cost monitoring triggers, sample repo layout, RACI. Generated from `ai-coe-genaiops-reference.md` via `build_genaiops_reference.py`. Architecture diagram at `docs/images/genaiops-reference-architecture.svg` |
 
 ### Partner motion
 
@@ -102,6 +106,15 @@ The offer also runs across **three AI surfaces** — M365 Copilot, Copilot Studi
 | [`build_tco_calculator.py`](build_tco_calculator.py) | Python (`openpyxl`) generator that builds `AI-CoE-AI-TCO-Calculator.xlsx` — pricing reference, inputs, run-rate forecast, scenarios, per-seat vs per-token, WAF binding |
 | [`build_playbook_addendum.py`](build_playbook_addendum.py) | Python (`python-docx`) generator that builds `AI-CoE-Operating-Playbook-Addendum.docx` |
 | [`build_sector_briefings.py`](build_sector_briefings.py) | Python (`python-pptx`) generator that builds all six `AI-CoE-Sector-Briefing-*.pptx` decks from a single templated builder driven by a SECTORS data list |
+| [`ai-coe-genaiops-reference.md`](ai-coe-genaiops-reference.md) | Long-form source for the GenAIOps & Agent-Ops Reference — registry fields, 6-layer architecture, lifecycle gates, eval harness, dashboards, drift triggers, sample repo, RACI (issue #11) |
+| [`build_genaiops_reference.py`](build_genaiops_reference.py) | Python (`python-docx`) generator that builds `AI-CoE-GenAIOps-Reference.docx` from the GenAIOps reference markdown |
+| [`docs/images/genaiops-reference-architecture.svg`](docs/images/genaiops-reference-architecture.svg) | Six-layer architecture diagram (L1 Experience → L6 Governance) with lifecycle-gate strip; referenced from the GenAIOps reference doc and VBD C13 entry |
+| [`ai-coe-model-choice-guide.md`](ai-coe-model-choice-guide.md) | Long-form source for the Model Choice one-pager — Foundry catalog, 5 selection criteria, 3-tier router pattern, when-NOT-to-multi-model (issue #12) |
+| [`build_model_choice_onepager.py`](build_model_choice_onepager.py) | Python (`python-docx`) generator that builds `AI-CoE-Model-Choice-OnePager.docx` |
+| [`ai-coe-change-management-methodology.md`](ai-coe-change-management-methodology.md) | Long-form source for the ADKAR-based AI change-management methodology — 5-dimension readiness, Champions kit, KPI scaffold, 8-week plan (issue #13) |
+| [`build_change_readiness_workbook.py`](build_change_readiness_workbook.py) | Python (`openpyxl`) generator that builds `AI-CoE-Change-Readiness-Instrument.xlsx` — auto-scored Green/Amber/Red readiness band |
+| [`ai-coe-horizon-benchmark-dataset.md`](ai-coe-horizon-benchmark-dataset.md) | Long-form source for the Horizon benchmark — v1 anonymised RSA cohort (N=20), methodology, refresh cadence, privacy (issue #14) |
+| [`build_horizon_benchmark_workbook.py`](build_horizon_benchmark_workbook.py) | Python (`openpyxl`) generator that builds `AI-CoE-Horizon-Benchmark.xlsx` — percentile comparator on top of Horizon Assessment |
 
 ---
 
@@ -123,6 +136,10 @@ The offer also runs across **three AI surfaces** — M365 Copilot, Copilot Studi
 | **A partner manager onboarding an SI** | `AI-CoE-Partner-Recruitment-Kit.pptx` | `AI-CoE-Partner-Scorecard.xlsx` |
 | **A reviewer of the offer itself** | `improvements-plan.md` | `ai-coe-pitch-stats-report.md` |
 | **A new joiner to the CoE** | `AI-CoE-How-To-Use.pptx` | This README, then `AI-CoE-Operating-Playbook.docx` |
+| **A CoE / customer eval or RAI lead operationalising agents** | `AI-CoE-GenAIOps-Reference.docx` | `ai-coe-genaiops-reference.md`, `docs/images/genaiops-reference-architecture.svg`, `AI-CoE-AI-Governance-Playbook.docx` |
+| **An architect choosing models / building a router** | `AI-CoE-Model-Choice-OnePager.docx` | `ai-coe-model-choice-guide.md`, `AI-CoE-AI-TCO-Calculator.xlsx` |
+| **A change-management lead before a Copilot / Foundry rollout** | `AI-CoE-Change-Readiness-Instrument.xlsx` | `ai-coe-change-management-methodology.md`, `AI-CoE-Academy-Curriculum.xlsx` |
+| **A CSA benchmarking a customer's Horizon score against peers** | `AI-CoE-Horizon-Benchmark.xlsx` | `ai-coe-horizon-benchmark-dataset.md`, `AI-CoE-Horizon-Assessment.xlsx` |
 
 ---
 
