@@ -3,8 +3,25 @@
 **Author:** Review prepared for the RSA AI CoE offer team
 **Scope:** Strategic & content-level improvements to the customer-facing and internal AI CoE artefact set
 **Repo:** [`rsa_ai_coe`](https://github.com/yubaijna_microsoft/rsa_ai_coe)
-**Date:** Current review cycle
-**Status:** Draft for review
+**Date:** Original review cycle (superseded — see status note below)
+**Status:** Historical snapshot — most recommendations have since been implemented
+
+---
+
+> **Status note (current cycle).** This document is a **historical snapshot** from
+> an earlier review cycle and has been superseded by the current artefact set.
+> When this plan was written, 9 of the 13 office artefacts were IRM-encrypted and
+> could not be fully audited (see §2.2 below). All artefacts in the current repo
+> are open OOXML and have been re-reviewed end-to-end. The majority of the Tier-1
+> and Tier-2 recommendations in this plan — ATO economics, factory $0
+> differentiator, $1:$3-5 services-to-ACR ratio, KPI scaffold, CTA, refreshed
+> stats, three-stream model, partner motion, governance posture — are now
+> reflected in the live artefacts (Pitch-Deck, Customer-Pitch, Eskom briefing,
+> How-To-Use, Operating Playbook, Partner Recruitment Kit, Executive One-Pager,
+> FY27 Launch Plan, RACI). Slide counts referenced below (e.g. Eskom briefing
+> "9 slides") are also out of date — Eskom briefing is now **10 slides** and the
+> Pitch-Deck is **19 slides**. Treat this file as **context for how the offer
+> evolved**, not as an open work list.
 
 ---
 
