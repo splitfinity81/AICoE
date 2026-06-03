@@ -335,4 +335,17 @@ These are the highest-leverage, lowest-cost edits and should ship first:
 
 ---
 
+## 11. Update log — 2026-06-03 (P2 execution)
+
+Issues #7, #8, #9, #10 landed in a single execution pass:
+
+- **#7 (Commercial archetypes)** — `AI-CoE-Operating-Playbook-Addendum.docx` published as standalone companion (parent playbook is MIP-protected). Four named archetypes: per-resolved-case, per-document-processed, per-hour-recovered, gain-share. Each with baseline, measurement, partner role, MAICPP/ECIF treatment, exit terms, typical price floor. Cross-refs objection 1.1 and the TCO calculator.
+- **#8 (TCO / FinOps calculator)** — `AI-CoE-AI-TCO-Calculator.xlsx` shipped with 7 sheets. Pricing reference editable; inputs editable; per-token Foundry forecast composes from users × queries × tokens × model-mix × (1+retry+fallback) × cache adjustment. Per-seat M365 vs per-token Foundry comparison sheet. Three pre-loaded scenarios. WAF cost-optimisation principle binding.
+- **#9 (Pitch re-spine)** — `ai-coe-pitch-respine-spec.md` documents the new spine: lead with the three-surface × three-stream **moat grid** (slide 3 = anchor), pillars demoted to coverage checklist (slide 18). Shipped as `AI-CoE-Pitch-Deck-Respined.pptx` (22 slides) and `AI-CoE-Customer-Pitch-Respined.pptx` (5 slides). Promotes to primary file names after three live customer meetings + CSU sign-off.
+- **#10 (Sector verticalisation)** — Six 9-slide briefings published using the Eskom briefing as the template: Banking & Insurance, Retail, Telco, Mining, Public Sector / SOE, Healthcare. Each names regulators, three top use-cases, anonymised RSA reference, ATO sizing, and matching accelerators.
+
+This pass closes the highest-leverage P2 themes (commercial flexibility, unit economics, customer-facing spine, sector specificity). P3 themes (frontier-organisation positioning, governance framework re-ordering, partner-margin transparency) remain open.
+
+---
+
 *End of plan.*

@@ -46,12 +46,22 @@ The offer also runs across **three AI surfaces** — M365 Copilot, Copilot Studi
 | [`AI-CoE-Executive-OnePager.docx`](AI-CoE-Executive-OnePager.docx) | Word | C-suite leave-behind summarising the offer in one page |
 | [`AI-CoE-Horizon-Assessment.xlsx`](AI-CoE-Horizon-Assessment.xlsx) | Excel | Customer maturity / horizon scoring instrument |
 | [`AI-CoE-Academy-Curriculum.xlsx`](AI-CoE-Academy-Curriculum.xlsx) | Excel (4 sheets) | Role-based skilling curriculum — five named tracks (Executive Sponsor / AI Product Owner / AI Engineer / Data Engineer / Copilot Champion) × MS Learn paths × certification gates, cohort blueprint, 12-week rhythm, KPIs |
+| [`AI-CoE-Pitch-Deck-Respined.pptx`](AI-CoE-Pitch-Deck-Respined.pptx) | PowerPoint (22 slides) | Re-spined pitch leading with the **three-surface × three-stream moat grid** (slide 3 = anchor); pillars demoted to coverage checklist (slide 18). Promotes to primary after live-meeting validation. See `ai-coe-pitch-respine-spec.md`. |
+| [`AI-CoE-Customer-Pitch-Respined.pptx`](AI-CoE-Customer-Pitch-Respined.pptx) | PowerPoint (5 slides) | 5-slide customer variant of the re-spined pitch — title, moat grid, ATO economics, operating model, CTA. No pillars. |
+| [`AI-CoE-AI-TCO-Calculator.xlsx`](AI-CoE-AI-TCO-Calculator.xlsx) | Excel (7 sheets) | FinOps-for-AI unit-economics workbook: editable pricing reference + 21 inputs, per-token Foundry forecast (users × queries × tokens × model-mix × retry/fallback × cache), per-seat M365 vs per-token Foundry comparison, three pre-loaded scenarios, WAF cost-optimisation binding |
+| [`AI-CoE-Sector-Briefing-Banking-Insurance.pptx`](AI-CoE-Sector-Briefing-Banking-Insurance.pptx) | PowerPoint (9 slides) | BFSI executive briefing — SARB / FSCA / PA / FAIS / FICA regulators, top 3 use-cases, anonymised RSA reference, ATO sizing |
+| [`AI-CoE-Sector-Briefing-Retail.pptx`](AI-CoE-Sector-Briefing-Retail.pptx) | PowerPoint (9 slides) | Retail executive briefing — POPIA / PCI-DSS / CPA / NCA, omnichannel CX, supply-chain, store-ops |
+| [`AI-CoE-Sector-Briefing-Telco.pptx`](AI-CoE-Sector-Briefing-Telco.pptx) | PowerPoint (9 slides) | Telco executive briefing — ICASA / RICA, AIOps, care agents, OSS/BSS |
+| [`AI-CoE-Sector-Briefing-Mining.pptx`](AI-CoE-Sector-Briefing-Mining.pptx) | PowerPoint (9 slides) | Mining executive briefing — DMRE / MHSA / DFFE / NEMA, safety & ESG, predictive maintenance, geological |
+| [`AI-CoE-Sector-Briefing-Public-Sector.pptx`](AI-CoE-Sector-Briefing-Public-Sector.pptx) | PowerPoint (9 slides) | Public sector / SOE executive briefing — PFMA / MFMA / AGSA / SITA, citizen services, document workflows, programme management |
+| [`AI-CoE-Sector-Briefing-Healthcare.pptx`](AI-CoE-Sector-Briefing-Healthcare.pptx) | PowerPoint (9 slides) | Healthcare executive briefing — HPCSA / CMS / NHI / SAHPRA, clinical documentation, pre-auth, ops |
 
 ### Internal delivery artefacts
 
 | File | Format | Description |
 |---|---|---|
 | [`AI-CoE-Operating-Playbook.docx`](AI-CoE-Operating-Playbook.docx) | Word | The CoE's delivery operating model, rituals, gates, and governance |
+| [`AI-CoE-Operating-Playbook-Addendum.docx`](AI-CoE-Operating-Playbook-Addendum.docx) | Word | Standalone addendum to the Operating Playbook — four outcome-based / risk-share commercial archetypes (per-resolved-case, per-document-processed, per-hour-recovered, gain-share). Each with baseline, measurement, partner role, MAICPP/ECIF treatment, exit terms, RACI. |
 | [`AI-CoE-Delivery-RACI.docx`](AI-CoE-Delivery-RACI.docx) / [`.xlsx`](AI-CoE-Delivery-RACI.xlsx) | Word + Excel | Roles & accountabilities matrix across CSU / STU / ATU / partner |
 | [`AI-CoE-FY27-Launch-Plan.docx`](AI-CoE-FY27-Launch-Plan.docx) | Word | FY27 GTM launch plan |
 | [`AI-CoE-How-To-Use.pptx`](AI-CoE-How-To-Use.pptx) | PowerPoint | Internal enablement deck for sellers and CSAs — how to use this pack |
@@ -86,6 +96,12 @@ The offer also runs across **three AI surfaces** — M365 Copilot, Copilot Studi
 | [`ai-coe-academy-curriculum.md`](ai-coe-academy-curriculum.md) | Long-form Academy curriculum — five role tracks, cohort blueprint, 12-week rhythm, KPIs, partner role |
 | [`build_academy_workbook.py`](build_academy_workbook.py) | Python (`openpyxl`) generator that builds `AI-CoE-Academy-Curriculum.xlsx` |
 | [`accelerators/`](accelerators/) | Five named RSA CoE accelerators (one-pager each): ACC-1 Banking CX Agent · ACC-2 POPIA Landing Zone · ACC-3 M365 Copilot SOE Adoption · ACC-4 Regulated-Industry Pilot Kit · ACC-5 Document Intelligence + Foundry Pattern |
+| [`ai-coe-pitch-respine-spec.md`](ai-coe-pitch-respine-spec.md) | Specification for the pitch re-spine (issue #9) — new spine leads with the three-surface × three-stream moat grid; pillars demoted to coverage checklist. Includes validation gate before promotion to primary file names. |
+| [`build_respined_pitch_deck.py`](build_respined_pitch_deck.py) | Python (`python-pptx`) generator that builds `AI-CoE-Pitch-Deck-Respined.pptx` (22 slides) |
+| [`build_respined_customer_pitch.py`](build_respined_customer_pitch.py) | Python generator that builds `AI-CoE-Customer-Pitch-Respined.pptx` (5 slides) — imports slide builders from `build_respined_pitch_deck.py` |
+| [`build_tco_calculator.py`](build_tco_calculator.py) | Python (`openpyxl`) generator that builds `AI-CoE-AI-TCO-Calculator.xlsx` — pricing reference, inputs, run-rate forecast, scenarios, per-seat vs per-token, WAF binding |
+| [`build_playbook_addendum.py`](build_playbook_addendum.py) | Python (`python-docx`) generator that builds `AI-CoE-Operating-Playbook-Addendum.docx` |
+| [`build_sector_briefings.py`](build_sector_briefings.py) | Python (`python-pptx`) generator that builds all six `AI-CoE-Sector-Briefing-*.pptx` decks from a single templated builder driven by a SECTORS data list |
 
 ---
 
@@ -94,6 +110,10 @@ The offer also runs across **three AI surfaces** — M365 Copilot, Copilot Studi
 | If you are… | Start with… | Then read… |
 |---|---|---|
 | **An account team preparing a first customer meeting** | `AI-CoE-Customer-Pitch.pptx` | `AI-CoE-Executive-OnePager.docx`, `AI-CoE-Horizon-Assessment.xlsx` |
+| **An account team piloting the moat-led spine** | `AI-CoE-Customer-Pitch-Respined.pptx` (5 slides) | `AI-CoE-Pitch-Deck-Respined.pptx`, `ai-coe-pitch-respine-spec.md` |
+| **A CFO / FinOps lead modelling AI unit economics** | `AI-CoE-AI-TCO-Calculator.xlsx` | `AI-CoE-Operating-Playbook-Addendum.docx`, `AI-CoE-Objection-Handling.pptx` (Pillar 1) |
+| **A seller briefing a sector-specific customer** | The matching `AI-CoE-Sector-Briefing-*.pptx` | `AI-CoE-Sovereign-AI-RSA.pptx`, relevant accelerator one-pager |
+| **A commercial lead designing a risk-share deal** | `AI-CoE-Operating-Playbook-Addendum.docx` | `AI-CoE-AI-TCO-Calculator.xlsx`, `AI-CoE-Partner-Scorecard.xlsx` |
 | **A seller rehearsing for a tough second meeting** | `AI-CoE-Objection-Handling.pptx` | `ai-coe-objection-handling-report.md`, `AI-CoE-Pitch-Deck.pptx` (ATO / KPI slides) |
 | **A CSA pitching a regulated buyer (bank / SOE / insurer)** | `AI-CoE-Sovereign-AI-RSA.pptx` | `ai-coe-sovereign-ai-rsa-report.md`, `accelerators/acc-2-popia-landing-zone.md`, `accelerators/acc-4-regulated-pilot-kit.md` |
 | **A CISO / DPO / Internal Audit running governance** | `AI-CoE-AI-Governance-Playbook.docx` | `AI-CoE-AI-Impact-Assessment.xlsx`, `ai-coe-responsible-ai-governance.md` |
