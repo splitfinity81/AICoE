@@ -125,30 +125,55 @@ def s2_problem(prs):
     s = blank(prs); set_bg(s, WHITE)
     add_rect(s, 0, 0, SW, Inches(0.9), NAVY)
     add_text(s, Inches(0.5), Inches(0.2), Inches(12), Inches(0.55),
-             "\"We have AI initiatives. We don't have an AI capability.\"",
-             size=22, bold=True, color=WHITE, anchor=MSO_ANCHOR.MIDDLE)
-    add_text(s, Inches(0.5), Inches(1.15), Inches(12), Inches(0.5),
-             "The three failure modes we hear from RSA customers in 2026:",
-             size=15, color=DARK)
-    # Three columns
-    titles = ["Pilot purgatory", "Shadow AI sprawl", "Governance debt"]
-    bodies = [
-        "12+ proofs-of-concept, none in production. No funded path from pilot to platform. Cost without compounding.",
-        "Knowledge workers paste customer data into consumer chatbots. CISO has no visibility. POPIA exposure rising.",
-        "RAI policy in slideware, not in controls. AGSA/SARB/FSCA can't sample evidence. No quarterly attestation.",
+             "\"We don't have one AI problem. We have thirteen — and they compound.\"",
+             size=20, bold=True, color=WHITE, anchor=MSO_ANCHOR.MIDDLE)
+    add_text(s, Inches(0.5), Inches(1.0), Inches(12), Inches(0.4),
+             "The 13 buyer pain points an AI CoE exists to solve:",
+             size=13, color=DARK)
+    # Four bucket columns
+    buckets = [
+        ("Strategy & ROI", "CEO / CFO", BLUE, [
+            "1 — Pilot purgatory",
+            "2 — ROI is unproven",
+            "3 — Build-vs-buy paralysis",
+            "4 — Wait-and-see",
+        ]),
+        ("People & Adoption", "CHRO / COO", PURPLE, [
+            "5 — Shadow AI sprawl",
+            "6 — Skills gap",
+            "7 — Change fatigue",
+            "8 — Adoption stall",
+        ]),
+        ("Tech & Data", "CIO / CDO", CYAN, [
+            "9 — Data is not ready",
+            "10 — Integration debt",
+            "11 — Surface confusion",
+        ]),
+        ("Governance & Risk", "CISO / Risk", NAVY, [
+            "12 — Governance debt",
+            "13 — Sovereignty / POPIA",
+        ]),
     ]
-    colors = [BLUE, PURPLE, CYAN]
-    for i, (t, b, c) in enumerate(zip(titles, bodies, colors)):
-        x = Inches(0.5 + i * 4.2)
-        add_rect(s, x, Inches(2.0), Inches(4.0), Inches(0.55), c)
-        add_text(s, x + Inches(0.2), Inches(2.05), Inches(3.6), Inches(0.45),
-                 t, size=16, bold=True, color=WHITE, anchor=MSO_ANCHOR.MIDDLE)
-        add_rect(s, x, Inches(2.55), Inches(4.0), Inches(3.7), LIGHT)
-        add_text(s, x + Inches(0.2), Inches(2.7), Inches(3.6), Inches(3.4),
-                 b, size=13, color=DARK)
-    add_text(s, Inches(0.5), Inches(6.4), Inches(12), Inches(0.5),
-             "The AI CoE collapses all three. The next slide shows how.",
-             size=14, bold=True, color=NAVY)
+    col_w = Inches(3.1); gap = Inches(0.08); left0 = Inches(0.35)
+    for i, (title, owner, color, items) in enumerate(buckets):
+        x = left0 + i * (col_w + gap)
+        add_rect(s, x, Inches(1.5), col_w, Inches(0.55), color)
+        add_text(s, x + Inches(0.15), Inches(1.55), col_w - Inches(0.3), Inches(0.45),
+                 title, size=14, bold=True,
+                 color=(NAVY if color == CYAN else WHITE), anchor=MSO_ANCHOR.MIDDLE)
+        add_rect(s, x, Inches(2.05), col_w, Inches(0.35), LIGHT)
+        add_text(s, x + Inches(0.15), Inches(2.07), col_w - Inches(0.3), Inches(0.3),
+                 owner, size=10, color=DARK, anchor=MSO_ANCHOR.MIDDLE)
+        add_rect(s, x, Inches(2.40), col_w, Inches(3.85), WHITE)
+        for k, item in enumerate(items):
+            add_text(s, x + Inches(0.15), Inches(2.55 + k * 0.55), col_w - Inches(0.3), Inches(0.5),
+                     item, size=12, bold=True, color=NAVY)
+    add_text(s, Inches(0.5), Inches(6.35), Inches(12), Inches(0.45),
+             "Most enterprises solve 2–3 in isolation. The other 10 quietly cancel the value.",
+             size=13, color=DARK)
+    add_text(s, Inches(0.5), Inches(6.75), Inches(12), Inches(0.4),
+             "The AI CoE is the seam that collapses all 13. See AI-CoE-Why-A-CoE.docx for the full briefing.",
+             size=13, bold=True, color=NAVY)
     add_footer(s, "AI CoE | The customer's problem")
 
 

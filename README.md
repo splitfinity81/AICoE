@@ -44,6 +44,7 @@ The offer also runs across **three AI surfaces** — M365 Copilot, Copilot Studi
 | [`AI-CoE-AI-Impact-Assessment.xlsx`](AI-CoE-AI-Impact-Assessment.xlsx) | Excel (8 sheets) | Per-use-case impact assessment workbook with master crosswalk (RAI v2 ↔ ISO 42001 ↔ NIST AI RMF ↔ EU AI Act ↔ POPIA ↔ PFMA), 18-risk register, control selection, evidence log, sign-off, quarterly attestation |
 | [`AI-CoE-AI-Governance-Playbook.docx`](AI-CoE-AI-Governance-Playbook.docx) | Word | Operating playbook — four governance gates, RACI by gate, cadences, 18-control library, incident response, kill-switch, gate-failure protocol |
 | [`AI-CoE-Executive-OnePager.docx`](AI-CoE-Executive-OnePager.docx) | Word | C-suite leave-behind summarising the offer in one page |
+| [`AI-CoE-Why-A-CoE.docx`](AI-CoE-Why-A-CoE.docx) | Word | C-suite leave-behind that names all **13 buyer pain points** an AI CoE exists to solve, grouped by pillar, with the CoE response and proof artefact for each. Use as the first-meeting setup. Generated from `ai-coe-why-a-coe-pain-points.md` via `build_why_a_coe_onepager.py`. |
 | [`AI-CoE-Horizon-Assessment.xlsx`](AI-CoE-Horizon-Assessment.xlsx) | Excel | Customer maturity / horizon scoring instrument |
 | [`AI-CoE-Academy-Curriculum.xlsx`](AI-CoE-Academy-Curriculum.xlsx) | Excel (4 sheets) | Role-based skilling curriculum — five named tracks (Executive Sponsor / AI Product Owner / AI Engineer / Data Engineer / Copilot Champion) × MS Learn paths × certification gates, cohort blueprint, 12-week rhythm, KPIs |
 | [`AI-CoE-Pitch-Deck-Respined.pptx`](AI-CoE-Pitch-Deck-Respined.pptx) | PowerPoint (22 slides) | Re-spined pitch leading with the **three-surface × three-stream moat grid** (slide 3 = anchor); pillars demoted to coverage checklist (slide 18). Promotes to primary after live-meeting validation. See `ai-coe-pitch-respine-spec.md`. |
@@ -105,11 +106,13 @@ The offer also runs across **three AI surfaces** — M365 Copilot, Copilot Studi
 | [`build_respined_customer_pitch.py`](build_respined_customer_pitch.py) | Python generator that builds `AI-CoE-Customer-Pitch-Respined.pptx` (5 slides) — imports slide builders from `build_respined_pitch_deck.py` |
 | [`build_tco_calculator.py`](build_tco_calculator.py) | Python (`openpyxl`) generator that builds `AI-CoE-AI-TCO-Calculator.xlsx` — pricing reference, inputs, run-rate forecast, scenarios, per-seat vs per-token, WAF binding |
 | [`build_playbook_addendum.py`](build_playbook_addendum.py) | Python (`python-docx`) generator that builds `AI-CoE-Operating-Playbook-Addendum.docx` |
+| [`build_why_a_coe_onepager.py`](build_why_a_coe_onepager.py) | Python (`python-docx`) generator that builds `AI-CoE-Why-A-CoE.docx` from `ai-coe-why-a-coe-pain-points.md` — 13-pain-point C-suite leave-behind |
 | [`build_sector_briefings.py`](build_sector_briefings.py) | Python (`python-pptx`) generator that builds all six `AI-CoE-Sector-Briefing-*.pptx` decks from a single templated builder driven by a SECTORS data list |
 | [`ai-coe-genaiops-reference.md`](ai-coe-genaiops-reference.md) | Long-form source for the GenAIOps & Agent-Ops Reference — registry fields, 6-layer architecture, lifecycle gates, eval harness, dashboards, drift triggers, sample repo, RACI (issue #11) |
 | [`build_genaiops_reference.py`](build_genaiops_reference.py) | Python (`python-docx`) generator that builds `AI-CoE-GenAIOps-Reference.docx` from the GenAIOps reference markdown |
 | [`docs/images/genaiops-reference-architecture.svg`](docs/images/genaiops-reference-architecture.svg) | Six-layer architecture diagram (L1 Experience → L6 Governance) with lifecycle-gate strip; referenced from the GenAIOps reference doc and VBD C13 entry |
 | [`ai-coe-model-choice-guide.md`](ai-coe-model-choice-guide.md) | Long-form source for the Model Choice one-pager — Foundry catalog, 5 selection criteria, 3-tier router pattern, when-NOT-to-multi-model (issue #12) |
+| [`ai-coe-why-a-coe-pain-points.md`](ai-coe-why-a-coe-pain-points.md) | Long-form source for the **Why an AI CoE** leave-behind — names all 13 buyer pain points grouped 4-bucket × 6-pillar with CoE response + proof artefact per pain |
 | [`build_model_choice_onepager.py`](build_model_choice_onepager.py) | Python (`python-docx`) generator that builds `AI-CoE-Model-Choice-OnePager.docx` |
 | [`ai-coe-change-management-methodology.md`](ai-coe-change-management-methodology.md) | Long-form source for the ADKAR-based AI change-management methodology — 5-dimension readiness, Champions kit, KPI scaffold, 8-week plan (issue #13) |
 | [`build_change_readiness_workbook.py`](build_change_readiness_workbook.py) | Python (`openpyxl`) generator that builds `AI-CoE-Change-Readiness-Instrument.xlsx` — auto-scored Green/Amber/Red readiness band |
@@ -122,7 +125,8 @@ The offer also runs across **three AI surfaces** — M365 Copilot, Copilot Studi
 
 | If you are… | Start with… | Then read… |
 |---|---|---|
-| **An account team preparing a first customer meeting** | `AI-CoE-Customer-Pitch.pptx` | `AI-CoE-Executive-OnePager.docx`, `AI-CoE-Horizon-Assessment.xlsx` |
+| **An account team preparing a first customer meeting** | `AI-CoE-Customer-Pitch.pptx` | `AI-CoE-Why-A-CoE.docx`, `AI-CoE-Executive-OnePager.docx`, `AI-CoE-Horizon-Assessment.xlsx` |
+| **A C-suite buyer asking "why do I need a CoE at all?"** | `AI-CoE-Why-A-CoE.docx` (13 pain points) | `AI-CoE-Pitch-Deck-Respined.pptx` slide 2, `AI-CoE-Objection-Handling.pptx` |
 | **An account team piloting the moat-led spine** | `AI-CoE-Customer-Pitch-Respined.pptx` (5 slides) | `AI-CoE-Pitch-Deck-Respined.pptx`, `ai-coe-pitch-respine-spec.md` |
 | **A CFO / FinOps lead modelling AI unit economics** | `AI-CoE-AI-TCO-Calculator.xlsx` | `AI-CoE-Operating-Playbook-Addendum.docx`, `AI-CoE-Objection-Handling.pptx` (Pillar 1) |
 | **A seller briefing a sector-specific customer** | The matching `AI-CoE-Sector-Briefing-*.pptx` | `AI-CoE-Sovereign-AI-RSA.pptx`, relevant accelerator one-pager |
