@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 620" font-family="Segoe UI, Arial, sans-serif" role="img" aria-label="AI CoE artefact map">
+  <defs>
+    <style>
+      .title  { font-size: 22px; font-weight: 700; fill: #0B1F3A; }
+      .sub    { font-size: 13px; fill: #555; }
+      .col    { font-size: 14px; font-weight: 700; fill: #FFFFFF; }
+      .item   { font-size: 12px; fill: #1A1A1A; }
+      .pill   { fill: #FFFFFF; stroke: #C9D3E2; stroke-width: 1; }
+      .footer { font-size: 11px; fill: #777; }
+    </style>
+  </defs>
+
+  <text x="40" y="40" class="title">AI CoE artefact map</text>
+  <text x="40" y="62" class="sub">Every file in this repo, grouped by primary audience and intent.</text>
+
+  <!-- Column 1: Customer-facing -->
+  <rect x="40"  y="90" width="320" height="40" rx="6" fill="#0067B8"/>
+  <text x="200" y="116" class="col" text-anchor="middle">Customer-facing</text>
+
+  <g>
+    <rect class="pill" x="40"  y="140" width="320" height="46" rx="6"/>
+    <text x="56" y="158" class="item" font-weight="700">AI-CoE-Customer-Pitch.pptx</text>
+    <text x="56" y="175" class="item">Short outside-in pitch (5 slides)</text>
+
+    <rect class="pill" x="40"  y="194" width="320" height="46" rx="6"/>
+    <text x="56" y="212" class="item" font-weight="700">AI-CoE-Pitch-Deck.pptx</text>
+    <text x="56" y="229" class="item">Full pitch with ATO economics (19 slides)</text>
+
+    <rect class="pill" x="40"  y="248" width="320" height="46" rx="6"/>
+    <text x="56" y="266" class="item" font-weight="700">AI-CoE-Eskom-Executive-Briefing.pptx</text>
+    <text x="56" y="283" class="item">Regulated-industry vertical template</text>
+
+    <rect class="pill" x="40"  y="302" width="320" height="46" rx="6"/>
+    <text x="56" y="320" class="item" font-weight="700">AI-CoE-Executive-OnePager.docx</text>
+    <text x="56" y="337" class="item">C-suite leave-behind</text>
+
+    <rect class="pill" x="40"  y="356" width="320" height="46" rx="6"/>
+    <text x="56" y="374" class="item" font-weight="700">AI-CoE-Horizon-Assessment.xlsx</text>
+    <text x="56" y="391" class="item">Customer maturity scoring</text>
+  </g>
+
+  <!-- Column 2: Internal delivery -->
+  <rect x="380" y="90" width="320" height="40" rx="6" fill="#742A9B"/>
+  <text x="540" y="116" class="col" text-anchor="middle">Internal delivery</text>
+
+  <g>
+    <rect class="pill" x="380" y="140" width="320" height="46" rx="6"/>
+    <text x="396" y="158" class="item" font-weight="700">AI-CoE-Operating-Playbook.docx</text>
+    <text x="396" y="175" class="item">Delivery operating model and rituals</text>
+
+    <rect class="pill" x="380" y="194" width="320" height="46" rx="6"/>
+    <text x="396" y="212" class="item" font-weight="700">AI-CoE-Delivery-RACI.docx / .xlsx</text>
+    <text x="396" y="229" class="item">Roles &amp; accountabilities matrix</text>
+
+    <rect class="pill" x="380" y="248" width="320" height="46" rx="6"/>
+    <text x="396" y="266" class="item" font-weight="700">AI-CoE-FY27-Launch-Plan.docx</text>
+    <text x="396" y="283" class="item">GTM launch plan</text>
+
+    <rect class="pill" x="380" y="302" width="320" height="46" rx="6"/>
+    <text x="396" y="320" class="item" font-weight="700">AI-CoE-How-To-Use.pptx</text>
+    <text x="396" y="337" class="item">Internal enablement for sellers/CSAs</text>
+
+    <rect class="pill" x="380" y="356" width="320" height="46" rx="6"/>
+    <text x="396" y="374" class="item" font-weight="700">AI-CoE-VBD-Reference-Deck.pptx</text>
+    <text x="396" y="391" class="item">VBD menu (25 slides, generated)</text>
+  </g>
+
+  <!-- Column 3: Partner motion -->
+  <rect x="720" y="90" width="320" height="40" rx="6" fill="#107C10"/>
+  <text x="880" y="116" class="col" text-anchor="middle">Partner motion</text>
+
+  <g>
+    <rect class="pill" x="720" y="140" width="320" height="46" rx="6"/>
+    <text x="736" y="158" class="item" font-weight="700">AI-CoE-Partner-Recruitment-Kit.pptx</text>
+    <text x="736" y="175" class="item">Partner GTM kit</text>
+
+    <rect class="pill" x="720" y="194" width="320" height="46" rx="6"/>
+    <text x="736" y="212" class="item" font-weight="700">AI-CoE-Partner-Scorecard.xlsx</text>
+    <text x="736" y="229" class="item">Partner qualification scorecard</text>
+  </g>
+
+  <!-- Column 3 bottom: Source / build -->
+  <rect x="720" y="260" width="320" height="40" rx="6" fill="#B76E00"/>
+  <text x="880" y="286" class="col" text-anchor="middle">Source &amp; build</text>
+
+  <g>
+    <rect class="pill" x="720" y="310" width="320" height="46" rx="6"/>
+    <text x="736" y="328" class="item" font-weight="700">csu-ai-vbd-reference-report.md</text>
+    <text x="736" y="345" class="item">Long-form companion to the VBD deck</text>
+
+    <rect class="pill" x="720" y="364" width="320" height="46" rx="6"/>
+    <text x="736" y="382" class="item" font-weight="700">ai-coe-pitch-stats-report.md</text>
+    <text x="736" y="399" class="item">Verified 2025–2026 stat refresh</text>
+
+    <rect class="pill" x="720" y="418" width="320" height="46" rx="6"/>
+    <text x="736" y="436" class="item" font-weight="700">improvements-plan.md</text>
+    <text x="736" y="453" class="item">Strategic review &amp; backlog</text>
+
+    <rect class="pill" x="720" y="472" width="320" height="46" rx="6"/>
+    <text x="736" y="490" class="item" font-weight="700">build_vbd_deck.py + add_speaker_notes.py</text>
+    <text x="736" y="507" class="item">Deck generator (python-pptx)</text>
+  </g>
+
+  <text x="40" y="585" class="footer">Solid tiles = readable; many .pptx / .docx / .xlsx artefacts are IRM-encrypted and require an authorised Office sign-in to open.</text>
+  <text x="40" y="602" class="footer">Repository: splitfinity81/AICoE  •  Authoring lead: Yuri Baijnath, Sr CSA Manager, RSA CSU, Microsoft</text>
+</svg>

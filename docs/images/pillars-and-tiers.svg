@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 520" font-family="Segoe UI, Arial, sans-serif" role="img" aria-label="5+1 Pillar framework crossed with 3-tier CoE ladder">
+  <defs>
+    <style>
+      .title  { font-size: 22px; font-weight: 700; fill: #0B1F3A; }
+      .sub    { font-size: 13px; fill: #555; }
+      .h      { font-size: 13px; font-weight: 700; fill: #FFFFFF; }
+      .p      { font-size: 12px; fill: #1A1A1A; }
+      .tier   { font-size: 12px; font-weight: 700; fill: #FFFFFF; }
+      .footer { font-size: 11px; fill: #777; }
+    </style>
+  </defs>
+
+  <text x="40" y="40" class="title">5+1 Pillars × 3-tier CoE ladder</text>
+  <text x="40" y="62" class="sub">The framework that runs across every artefact in this pack.</text>
+
+  <!-- Pillars row -->
+  <g>
+    <rect x="40"   y="90" width="160" height="60" rx="6" fill="#0067B8"/>
+    <text x="120" y="120" class="h" text-anchor="middle">1. Business</text>
+    <text x="120" y="138" class="h" text-anchor="middle">Strategy</text>
+
+    <rect x="210"  y="90" width="160" height="60" rx="6" fill="#0067B8"/>
+    <text x="290" y="120" class="h" text-anchor="middle">2. Org &amp;</text>
+    <text x="290" y="138" class="h" text-anchor="middle">Culture</text>
+
+    <rect x="380"  y="90" width="160" height="60" rx="6" fill="#0067B8"/>
+    <text x="460" y="120" class="h" text-anchor="middle">3. AI Strategy &amp;</text>
+    <text x="460" y="138" class="h" text-anchor="middle">Experience</text>
+
+    <rect x="550"  y="90" width="160" height="60" rx="6" fill="#0067B8"/>
+    <text x="630" y="120" class="h" text-anchor="middle">4. Tech &amp;</text>
+    <text x="630" y="138" class="h" text-anchor="middle">Data</text>
+
+    <rect x="720"  y="90" width="160" height="60" rx="6" fill="#0067B8"/>
+    <text x="800" y="120" class="h" text-anchor="middle">5. Governance</text>
+    <text x="800" y="138" class="h" text-anchor="middle">&amp; Security</text>
+
+    <rect x="890"  y="90" width="150" height="60" rx="6" fill="#742A9B"/>
+    <text x="965" y="120" class="h" text-anchor="middle">+1 Co-sell</text>
+    <text x="965" y="138" class="h" text-anchor="middle">&amp; Partner</text>
+  </g>
+
+  <!-- Tier rows -->
+  <g>
+    <!-- T1 -->
+    <rect x="40"  y="170" width="1000" height="90" rx="8" fill="#F3F6FA" stroke="#C9D3E2"/>
+    <rect x="40"  y="170" width="160"  height="90" rx="8" fill="#107C10"/>
+    <text x="120" y="205" class="tier" text-anchor="middle">Tier 1</text>
+    <text x="120" y="223" class="tier" text-anchor="middle">Envisioning</text>
+    <text x="120" y="245" class="p"    text-anchor="middle" fill="#FFFFFF">MCEM 1–2</text>
+    <text x="220" y="200" class="p" font-weight="700">Workshops · Solution Assessments · ATO Component 1</text>
+    <text x="220" y="220" class="p">Art-of-the-possible, scenario design, AI patterns scorecard, responsible-AI alignment.</text>
+    <text x="220" y="240" class="p">Funding: ECIF (up to $50K pre-sales), MAICPP, SA.</text>
+
+    <!-- T2 -->
+    <rect x="40"  y="278" width="1000" height="90" rx="8" fill="#E8EEF7" stroke="#C9D3E2"/>
+    <rect x="40"  y="278" width="160"  height="90" rx="8" fill="#0067B8"/>
+    <text x="120" y="313" class="tier" text-anchor="middle">Tier 2</text>
+    <text x="120" y="331" class="tier" text-anchor="middle">Build</text>
+    <text x="120" y="353" class="p"    text-anchor="middle" fill="#FFFFFF">MCEM 3</text>
+    <text x="220" y="308" class="p" font-weight="700">Landing zones · Co-builds · Hackathons · ATO Component 2</text>
+    <text x="220" y="328" class="p">Agentic AI landing zone, GenAI MVP, Foundry / Fabric / Copilot Studio production builds.</text>
+    <text x="220" y="348" class="p">Funding: ACO, MAICPP, ECIF (up to $1M post-sales when ATO-aligned).</text>
+
+    <!-- T3 -->
+    <rect x="40"  y="386" width="1000" height="90" rx="8" fill="#F3F6FA" stroke="#C9D3E2"/>
+    <rect x="40"  y="386" width="160"  height="90" rx="8" fill="#742A9B"/>
+    <text x="120" y="421" class="tier" text-anchor="middle">Tier 3</text>
+    <text x="120" y="439" class="tier" text-anchor="middle">Managed Run</text>
+    <text x="120" y="461" class="p"    text-anchor="middle" fill="#FFFFFF">MCEM 4–5</text>
+    <text x="220" y="416" class="p" font-weight="700">GenAIOps · Optimization · ATO Component 3</text>
+    <text x="220" y="436" class="p">AgentOps maturity, value realization, WAF for AI, scale &amp; FinOps.</text>
+    <text x="220" y="456" class="p">Funding: ACO, MAICPP partner, customer-funded.</text>
+  </g>
+
+  <text x="40" y="498" class="footer">3 AI surfaces (orthogonal to the ladder): M365 Copilot · Copilot Studio agents · Azure AI Foundry agents — extended in improvements-plan.md to GitHub Copilot, Security Copilot, D365 Copilots, Industry Clouds.</text>
+</svg>
