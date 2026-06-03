@@ -4,7 +4,7 @@ Generates AI-CoE-VBD-Reference-Deck.pptx from csu-ai-vbd-reference-report.md.
 Each VBD is articulated with Key Outcomes and Contribution to the AI CoE
 (5+1 pillars x 3-tier ladder x MCEM 1-5).
 
-Author: Yuri Baijnath - Sr CSA Manager, RSA CSU
+Author: Yuri Baijnath - CSU Cloud & AI Lead (South Africa)
 """
 
 from __future__ import annotations
@@ -221,7 +221,7 @@ def build_title(prs):
     add_text(s, Inches(0.7), Inches(5.85), Inches(12), Inches(0.4),
              "Yuri Baijnath", size=18, bold=True, color=C_BG)
     add_text(s, Inches(0.7), Inches(6.25), Inches(12), Inches(0.4),
-             "Sr CSA Manager, RSA CSU  \u00b7  Yuri.Baijnath@microsoft.com  \u00b7  Microsoft South Africa",
+             "CSU Cloud & AI Lead (South Africa)  \u00b7  Yuri.Baijnath@microsoft.com  \u00b7  Microsoft",
              size=12, color=C_ACCENT2)
     add_text(s, Inches(0.7), Inches(6.7), Inches(12), Inches(0.4),
              "Source: csu-ai-vbd-reference-report.md  \u00b7  Re-verify VERIFY-flagged items on MCAPS Catalog before customer commit",
@@ -1114,7 +1114,7 @@ def build_close(prs):
     add_text(s, Inches(0.7), Inches(6.2), Inches(12), Inches(0.4),
              "Yuri Baijnath", size=18, bold=True, color=C_BG)
     add_text(s, Inches(0.7), Inches(6.6), Inches(12), Inches(0.4),
-             "Sr CSA Manager, RSA CSU  \u00b7  Yuri.Baijnath@microsoft.com  \u00b7  Microsoft South Africa",
+             "CSU Cloud & AI Lead (South Africa)  \u00b7  Yuri.Baijnath@microsoft.com  \u00b7  Microsoft",
              size=12, color=C_ACCENT2)
 
 

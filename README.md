@@ -40,8 +40,12 @@ The offer also runs across **three AI surfaces** — M365 Copilot, Copilot Studi
 | [`AI-CoE-Customer-Pitch.pptx`](AI-CoE-Customer-Pitch.pptx) | PowerPoint (5 slides) | Short outside-in pitch for first customer meetings |
 | [`AI-CoE-Pitch-Deck.pptx`](AI-CoE-Pitch-Deck.pptx) | PowerPoint (19 slides) | Full pitch — 5+1 Pillars, F1–F10 factory, ATO economics, $1:$3–5 value, KPI scaffold, NTT DATA & Capgemini proof points |
 | [`AI-CoE-Eskom-Executive-Briefing.pptx`](AI-CoE-Eskom-Executive-Briefing.pptx) | PowerPoint (9 slides) | Regulated-industry vertical template (POPIA / PFMA / NERSA, SA North/West residency, Purview AI Hub) |
+| [`AI-CoE-Sovereign-AI-RSA.pptx`](AI-CoE-Sovereign-AI-RSA.pptx) | PowerPoint (14 slides) | Productised Sovereign-AI offer for RSA regulated buyers — three sovereignty dimensions, region posture, control crosswalk, operating model, phased commercials. Generated from `ai-coe-sovereign-ai-rsa-report.md` via `build_sovereign_deck.py` |
+| [`AI-CoE-AI-Impact-Assessment.xlsx`](AI-CoE-AI-Impact-Assessment.xlsx) | Excel (8 sheets) | Per-use-case impact assessment workbook with master crosswalk (RAI v2 ↔ ISO 42001 ↔ NIST AI RMF ↔ EU AI Act ↔ POPIA ↔ PFMA), 18-risk register, control selection, evidence log, sign-off, quarterly attestation |
+| [`AI-CoE-AI-Governance-Playbook.docx`](AI-CoE-AI-Governance-Playbook.docx) | Word | Operating playbook — four governance gates, RACI by gate, cadences, 18-control library, incident response, kill-switch, gate-failure protocol |
 | [`AI-CoE-Executive-OnePager.docx`](AI-CoE-Executive-OnePager.docx) | Word | C-suite leave-behind summarising the offer in one page |
 | [`AI-CoE-Horizon-Assessment.xlsx`](AI-CoE-Horizon-Assessment.xlsx) | Excel | Customer maturity / horizon scoring instrument |
+| [`AI-CoE-Academy-Curriculum.xlsx`](AI-CoE-Academy-Curriculum.xlsx) | Excel (4 sheets) | Role-based skilling curriculum — five named tracks (Executive Sponsor / AI Product Owner / AI Engineer / Data Engineer / Copilot Champion) × MS Learn paths × certification gates, cohort blueprint, 12-week rhythm, KPIs |
 
 ### Internal delivery artefacts
 
@@ -52,6 +56,7 @@ The offer also runs across **three AI surfaces** — M365 Copilot, Copilot Studi
 | [`AI-CoE-FY27-Launch-Plan.docx`](AI-CoE-FY27-Launch-Plan.docx) | Word | FY27 GTM launch plan |
 | [`AI-CoE-How-To-Use.pptx`](AI-CoE-How-To-Use.pptx) | PowerPoint | Internal enablement deck for sellers and CSAs — how to use this pack |
 | [`AI-CoE-VBD-Reference-Deck.pptx`](AI-CoE-VBD-Reference-Deck.pptx) | PowerPoint (25 slides) | The CSU-wide AI VBD menu — generated from `csu-ai-vbd-reference-report.md` via `build_vbd_deck.py` |
+| [`AI-CoE-Objection-Handling.pptx`](AI-CoE-Objection-Handling.pptx) | PowerPoint (21 slides) | Internal seller reference — 34 recurring customer objections mapped to the 5+1 Pillars with response, proof point, and escalation owner. Generated from `ai-coe-objection-handling-report.md` via `build_objection_deck.py` |
 
 ### Partner motion
 
@@ -69,6 +74,18 @@ The offer also runs across **three AI surfaces** — M365 Copilot, Copilot Studi
 | [`improvements-plan.md`](improvements-plan.md) | Strategic review of the entire pack with 14 prioritised improvement themes |
 | [`build_vbd_deck.py`](build_vbd_deck.py) | Python (`python-pptx`) generator that builds `AI-CoE-VBD-Reference-Deck.pptx` from the VBD reference report |
 | [`add_speaker_notes.py`](add_speaker_notes.py) | Adds per-slide speaker notes to the generated VBD deck (additive only — preserves shapes and order) |
+| [`ai-coe-objection-handling-report.md`](ai-coe-objection-handling-report.md) | Long-form source of truth for the objection-handling deck — 34 objections across the 5+1 Pillars with persona, underlying concern, response, proof point, and escalation owner |
+| [`build_objection_deck.py`](build_objection_deck.py) | Python (`python-pptx`) generator that builds `AI-CoE-Objection-Handling.pptx` from the objection-handling report |
+| [`add_objection_speaker_notes.py`](add_objection_speaker_notes.py) | Adds per-slide speaker notes to the generated objection-handling deck (additive only) |
+| [`ai-coe-sovereign-ai-rsa-report.md`](ai-coe-sovereign-ai-rsa-report.md) | Long-form source for the Sovereign-AI offer — five components, three sovereignty dimensions, region posture, master crosswalk, operating model, engagement shape, counter-objections |
+| [`build_sovereign_deck.py`](build_sovereign_deck.py) | Python (`python-pptx`) generator that builds `AI-CoE-Sovereign-AI-RSA.pptx` from the sovereign report |
+| [`add_sovereign_speaker_notes.py`](add_sovereign_speaker_notes.py) | Adds per-slide speaker notes to the generated sovereign-AI deck (additive only) |
+| [`ai-coe-responsible-ai-governance.md`](ai-coe-responsible-ai-governance.md) | Long-form RAI/governance report — control crosswalk, four-gate model, RACI, counter-objections |
+| [`build_impact_assessment_workbook.py`](build_impact_assessment_workbook.py) | Python (`openpyxl`) generator that builds `AI-CoE-AI-Impact-Assessment.xlsx` |
+| [`build_governance_playbook.py`](build_governance_playbook.py) | Python (`python-docx`) generator that builds `AI-CoE-AI-Governance-Playbook.docx` |
+| [`ai-coe-academy-curriculum.md`](ai-coe-academy-curriculum.md) | Long-form Academy curriculum — five role tracks, cohort blueprint, 12-week rhythm, KPIs, partner role |
+| [`build_academy_workbook.py`](build_academy_workbook.py) | Python (`openpyxl`) generator that builds `AI-CoE-Academy-Curriculum.xlsx` |
+| [`accelerators/`](accelerators/) | Five named RSA CoE accelerators (one-pager each): ACC-1 Banking CX Agent · ACC-2 POPIA Landing Zone · ACC-3 M365 Copilot SOE Adoption · ACC-4 Regulated-Industry Pilot Kit · ACC-5 Document Intelligence + Foundry Pattern |
 
 ---
 
@@ -77,6 +94,10 @@ The offer also runs across **three AI surfaces** — M365 Copilot, Copilot Studi
 | If you are… | Start with… | Then read… |
 |---|---|---|
 | **An account team preparing a first customer meeting** | `AI-CoE-Customer-Pitch.pptx` | `AI-CoE-Executive-OnePager.docx`, `AI-CoE-Horizon-Assessment.xlsx` |
+| **A seller rehearsing for a tough second meeting** | `AI-CoE-Objection-Handling.pptx` | `ai-coe-objection-handling-report.md`, `AI-CoE-Pitch-Deck.pptx` (ATO / KPI slides) |
+| **A CSA pitching a regulated buyer (bank / SOE / insurer)** | `AI-CoE-Sovereign-AI-RSA.pptx` | `ai-coe-sovereign-ai-rsa-report.md`, `accelerators/acc-2-popia-landing-zone.md`, `accelerators/acc-4-regulated-pilot-kit.md` |
+| **A CISO / DPO / Internal Audit running governance** | `AI-CoE-AI-Governance-Playbook.docx` | `AI-CoE-AI-Impact-Assessment.xlsx`, `ai-coe-responsible-ai-governance.md` |
+| **A skilling lead designing a customer learner cohort** | `AI-CoE-Academy-Curriculum.xlsx` | `ai-coe-academy-curriculum.md`, `accelerators/acc-3-copilot-soe-adoption.md` |
 | **A CSA / CSAM scoping a delivery** | `AI-CoE-VBD-Reference-Deck.pptx` + `csu-ai-vbd-reference-report.md` | `AI-CoE-Operating-Playbook.docx`, `AI-CoE-Delivery-RACI.xlsx` |
 | **An exec sponsor briefing a regulated customer** | `AI-CoE-Eskom-Executive-Briefing.pptx` | `AI-CoE-Pitch-Deck.pptx` (slides on governance, ATO, KPIs) |
 | **A partner manager onboarding an SI** | `AI-CoE-Partner-Recruitment-Kit.pptx` | `AI-CoE-Partner-Scorecard.xlsx` |
@@ -117,6 +138,6 @@ Together with `improvements-plan.md`, these three Markdown files contain the off
 
 ## Authoring
 
-**Lead:** Yuri Baijnath — Senior CSA Manager, RSA CSU, Microsoft South Africa.
+**Lead:** Yuri Baijnath — CSU Cloud & AI Lead (South Africa), Microsoft.
 **Audience:** RSA CSU (CSAs, CSAMs, STU, ATU) and the partner ecosystem delivering the AI CoE offer.
 **Cadence:** The VBD catalogue refreshes each fiscal year — re-verify on the MCAPS Catalog before any customer commit. Items flagged `VERIFY` in `csu-ai-vbd-reference-report.md` should be cross-checked on MCAPS Catalog / Microsoft Partner Center / `aka.ms` VBD index before being quoted in customer-facing material.

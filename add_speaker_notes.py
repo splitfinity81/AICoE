@@ -19,7 +19,7 @@ NOTES: list[list[str]] = [
     # S1 - Title
     [
         "Slide 1 - Title / opener.",
-        "Greet the room. Introduce yourself: Yuri Baijnath, Senior CSA Manager, RSA CSU, Microsoft South Africa.",
+        "Greet the room. Introduce yourself: Yuri Baijnath, CSU Cloud & AI Lead (South Africa), Microsoft.",
         "Set the deck's purpose in one line: a single, opinionated menu of every AI VBD a CSA can run, mapped to outcomes, CoE pillars, and MCEM stages.",
         "Frame the audience: CSAs, CSAMs, STUs, and partner sellers who need to translate VBD names into customer outcomes.",
         "Caveat up front: VERIFY-flagged items (marked with *) must be re-checked on the MCAPS Catalog before any customer commit - the catalog evolves quarterly.",

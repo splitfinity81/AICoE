@@ -1,6 +1,6 @@
 # CSU AI / AI CoE VBD Reference Appendix
 
-**Audience:** RSA CSU — Senior CSA Manager (Yuri Baijnath) and CSA team
+**Audience:** RSA CSU — CSU Cloud & AI Lead (Yuri Baijnath) and CSA team
 **Purpose:** Reference appendix for the AI CoE artefact pack — every CSU-deliverable AI / AI CoE VBD with delivery owner, scope, MCEM stage, funding instrument, 5+1 pillar, and CoE-ladder tier
 **As of:** FY26 H2 (catalogue refreshes each fiscal year — re-verify on MCAPS Catalog before commit)
 **Confidence note:** This appendix is grounded in (a) internal grounding files in `/mnt/workspace/input` and `/mnt/workspace/working` (HIGH trust — MCAPS-sourced), and (b) Microsoft VBD/Azure-Accelerate knowledge as of May 2025 (MODERATE — the FY26 H2 catalogue may have renamed or retired entries). Items flagged `VERIFY` should be cross-checked on MCAPS Catalog / Microsoft Partner Center / aka.ms VBD index before quoting in customer-facing material.
@@ -174,7 +174,7 @@ In FY26 the funding mechanic moved into **Azure Accelerate**, a single umbrella 
 | # | VBD | Owner | Scope | Duration | MCEM | Funding | Pillars | Tier | Source |
 |---|---|---|---|---|---|---|---|---|---|
 | D1 | **Frontier AI CoE Stand-up Engagement (5+1 pillar build)** | X (CAI lead, MW + BA support) | Stands up the customer's AI CoE across Business Strategy, Org & Culture, AI Strategy, Tech & Data, Governance & Security + Co-sell/Partner pillar. | 6–12 weeks | 1–3 | ECIF, MAICPP | 1, 2, 3, 4, 5, +1 | T1+T2 | Frontier CoE pillar decks (`/mnt/workspace/input/Frontier CoE - *.PPTX`) — HIGH trust |
-| D2 | **AI Skilling / Microsoft Learn AI Skill Navigator engagement** | X | Skilling plan against Microsoft Learn AI roles (AI Engineer, Data Engineer, Copilot Champion); MAICPP-co-funded learner cohorts. | 8–12 weeks | 3 | MAICPP, ECIF | 2 | T1+T2 | aka.ms/AISkillsNavigator |
+| D2 | **AI CoE Academy (RSA) — role-based skilling programme** | X (CAI lead) | Productised 12-week skilling programme delivering five named role-tracks (Executive Sponsor, AI Product Owner, AI Engineer, Data Engineer, Copilot Champion) against Microsoft Learn AI paths, sector-specific labs, and certification gates. MAICPP-co-funded learner cohorts of 25–100. Replaces ad-hoc Skill Navigator delivery with a named curriculum and cohort blueprint. | 12 weeks per cohort | 2–4 | MAICPP, ECIF | 2, +1 | T1+T2+T3 | `ai-coe-academy-curriculum.md` + `AI-CoE-Academy-Curriculum.xlsx` |
 | D3 | **AI Value Realization (Stage-4 Realize) Engagement** | X (CSA-led, Stage 4 owner) | Telemetry-driven value-tracking across Copilot, Foundry, Fabric usage and outcomes; outputs CFO-grade business-case validation. | Quarterly cadence | 4–5 | ECIF | 1 | T3 | MCEM Stage 4 Playbook — CSA-owned (HIGH trust per content brief) |
 
 ---
@@ -217,6 +217,61 @@ This shortlist is what the CSA team should operate as the standard "VBD menu" in
 
 ---
 
+## Named Accelerators (RSA CoE IP)
+
+These are the named, packaged accelerators the RSA CoE leads with — competitors lead with named IP (Accenture **AI Refinery**, Deloitte **Atlas AI**, BCG **GENE**, Cognizant **Neuro AI**, TCS **WisdomNext**, Infosys **Topaz**, Wipro **ai360**); we lead with these.
+
+Each accelerator follows: **ID** · purpose · MCEM stage · pillar(s) · funding stack · time-box · partner-deliverable y/n · artefact link.
+
+### ACC-1 — RSA Banking Customer-Service Agent Pattern
+- **Purpose:** Reference architecture + Copilot Studio + Foundry Agent Service pattern for tier-1 customer-service automation in SA banks (SARB / FSCA-regulated).
+- **MCEM:** 3 → 4 (Build & Land)
+- **Pillars:** P3 AI Strategy & Experience, P4 Tech & Data, P5 Governance & Security
+- **Funding stack:** ATO $250–500K (ACO + ECIF), partner MAICPP for build
+- **Time-box:** 8–12 weeks pilot → 16 weeks scale
+- **Partner-deliverable:** Yes (MAICPP build partner)
+- **Artefact:** [`accelerators/acc-1-banking-cx-agent.md`](accelerators/acc-1-banking-cx-agent.md)
+
+### ACC-2 — POPIA-Compliant Foundry Landing-Zone Blueprint
+- **Purpose:** Bicep/Terraform landing-zone for Azure AI Foundry in SA North / SA West with POPIA, PFMA, Purview AI Hub, Defender for Cloud AI baked in. Deployable in <2 weeks.
+- **MCEM:** 2 → 3 (Design & Build foundations)
+- **Pillars:** P4 Tech & Data, P5 Governance & Security
+- **Funding stack:** Cloud Accelerate Factory (F1, F3, F4) at $0
+- **Time-box:** 2 weeks
+- **Partner-deliverable:** No (Microsoft Factory delivered)
+- **Artefact:** [`accelerators/acc-2-popia-landing-zone.md`](accelerators/acc-2-popia-landing-zone.md)
+
+### ACC-3 — M365 Copilot Adoption Playbook for SOEs
+- **Purpose:** SOE-tailored Copilot adoption motion — change-management, sponsor coalition, PFMA cost-justification template, AGSA-ready audit trail. Drop-in for Eskom-class customers.
+- **MCEM:** 4 → 5 (Land & Realise Value)
+- **Pillars:** P1 Business Strategy, P2 Org & Culture, P5 Governance & Security
+- **Funding stack:** ATO $150–250K + Copilot Adoption Acceleration
+- **Time-box:** 12-week wave (cohorts of 250–500 seats)
+- **Partner-deliverable:** Yes (Change-management partner)
+- **Artefact:** [`accelerators/acc-3-copilot-soe-adoption.md`](accelerators/acc-3-copilot-soe-adoption.md)
+
+### ACC-4 — Regulated-Industry Pilot Kit (POPIA / PFMA / NERSA)
+- **Purpose:** Reusable controls + workshop + risk register for any SA-regulated entity running its first GenAI pilot. Eskom-tested, generalised.
+- **MCEM:** 2 → 3 (Envision & Design)
+- **Pillars:** P5 Governance & Security, P3 AI Strategy & Experience
+- **Funding stack:** ATO Pre-sales ECIF $50K + Factory F6 (Governance)
+- **Time-box:** 4-week workshop + 8-week pilot
+- **Partner-deliverable:** Optional (Microsoft-led or partner-led)
+- **Artefact:** [`accelerators/acc-4-regulated-pilot-kit.md`](accelerators/acc-4-regulated-pilot-kit.md)
+
+### ACC-5 — Document Intelligence + Foundry Pattern (Claims / Permits / KYC)
+- **Purpose:** Reference pattern combining Document Intelligence (formerly Form Recognizer), Foundry agents, and human-in-the-loop review for high-volume regulated document workflows. KPIs in time-to-decision and FTE-recovery terms.
+- **MCEM:** 3 → 4 (Build & Land)
+- **Pillars:** P3 AI Strategy & Experience, P4 Tech & Data
+- **Funding stack:** ATO $300–600K + partner MAICPP
+- **Time-box:** 10-week pilot (single document type) → 6-month scale
+- **Partner-deliverable:** Yes (Build partner, often vertical SI)
+- **Artefact:** [`accelerators/acc-5-docintel-foundry-pattern.md`](accelerators/acc-5-docintel-foundry-pattern.md)
+
+> **How to use these:** Lead the CSA pitch with the accelerator that maps to the customer's first use-case — not with the pillar framework. The pillars are how we *check coverage*; accelerators are how we *open the conversation*.
+
+---
+
 ## Sources
 
 1. `/mnt/workspace/working/content-brief.md` — AI CoE offering content brief, 5+1 pillar definition, MCEM mapping, content-pack scope (HIGH trust — author Yuri Baijnath).
@@ -237,4 +292,4 @@ This shortlist is what the CSA team should operate as the standard "VBD menu" in
 
 **Verification methodology:** SIFT applied to grounding files (HIGH trust — internal Microsoft authorship, recent dates, corroboration across files); Chain-of-Verification applied to ATO funding numbers (cross-checked between slide 11 and slide 12 of `ato-content.md` — values match: $50K pre-sales ECIF, $1M post-sales = $500K ECIF + $500K ACO, ECIF 1:5 / 1:2 ratios). Adversarial pass surfaced 4 residual risks captured in the Pre-mortem.
 
-**Limitations disclosure:** This appendix was compiled in a sandboxed environment without live partner-portal access. The user (Sr CSA Manager, RSA CSU) has direct internal access and should re-verify FY26 H2 entries flagged `VERIFY` against MCAPS Catalog before any customer commit. The list is intended as a starting reference, not a single source of truth.
+**Limitations disclosure:** This appendix was compiled in a sandboxed environment without live partner-portal access. The user (CSU Cloud & AI Lead, South Africa) has direct internal access and should re-verify FY26 H2 entries flagged `VERIFY` against MCAPS Catalog before any customer commit. The list is intended as a starting reference, not a single source of truth.
