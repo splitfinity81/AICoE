@@ -20,7 +20,7 @@ Each deck has 9 slides:
   8. Anchored accelerators (from accelerators/)
   9. Close + call-to-action
 
-Author: Yuri Baijnath - CSU Cloud & AI Lead (South Africa), Microsoft.
+Author: Yuri Baijnath — CSU Cloud & AI Lead (South Africa), Microsoft
 """
 
 from __future__ import annotations

@@ -4,7 +4,7 @@ Generates AI-CoE-VBD-Reference-Deck.pptx from csu-ai-vbd-reference-report.md.
 Each VBD is articulated with Key Outcomes and Contribution to the AI CoE
 (5+1 pillars x 3-tier ladder x MCEM 1-5).
 
-Author: Yuri Baijnath - CSU Cloud & AI Lead (South Africa)
+Author: Yuri Baijnath — CSU Cloud & AI Lead (South Africa), Microsoft
 """
 
 from __future__ import annotations

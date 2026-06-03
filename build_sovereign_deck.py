@@ -3,7 +3,7 @@
 Generates AI-CoE-Sovereign-AI-RSA.pptx from ai-coe-sovereign-ai-rsa-report.md.
 Mirrors the visual canon of build_objection_deck.py / build_vbd_deck.py.
 
-Author: Yuri Baijnath - CSU Cloud & AI Lead (South Africa)
+Author: Yuri Baijnath — CSU Cloud & AI Lead (South Africa), Microsoft
 """
 
 from __future__ import annotations

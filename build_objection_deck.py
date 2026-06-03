@@ -5,7 +5,7 @@ ai-coe-objection-handling-report.md. Each pillar (5+1) gets an overview
 slide and a tabular objection menu listing recommended responses and the
 proof point a seller should reach for in the existing AI CoE artefact pack.
 
-Author: Yuri Baijnath - CSU Cloud & AI Lead (South Africa)
+Author: Yuri Baijnath — CSU Cloud & AI Lead (South Africa), Microsoft
 """
 
 from __future__ import annotations

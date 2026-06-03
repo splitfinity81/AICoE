@@ -86,8 +86,8 @@ def build_readme(wb: Workbook) -> None:
     add_title(ws, "AI TCO / FinOps Calculator - how to use", 2)
     rows = [
         ["Purpose", "Model the annual run-rate cost of an AI use-case across model routing, cache-hit, fallback/retry, and supporting infra. Compare per-seat (M365 Copilot) vs per-token (Foundry) economics."],
-        ["Author", "Yuri Baijnath - CSU Cloud & AI Lead (South Africa), Microsoft"],
-        ["Version", "1.0 - 2026-06-03"],
+        ["Author", "Yuri Baijnath — CSU Cloud & AI Lead (South Africa), Microsoft"],
+        ["Version", "1.0 · 2026-06-03"],
         ["When to use", "Pre-pilot sizing (Gate 2), production go-live forecast (Gate 3), quarterly attestation re-forecast (Gate 4)."],
         ["Inputs (yellow cells)", "Edit only yellow cells. Sheets: 2. Pricing reference, 3. Inputs, 5. Scenarios."],
         ["Results (green cells)", "Computed from inputs. Do not overwrite. Sheets: 4. Run-rate forecast, 6. Per-seat vs per-token."],

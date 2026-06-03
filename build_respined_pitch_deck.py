@@ -117,7 +117,7 @@ def s1_title(prs):
              "Three AI surfaces. Three funding streams. One operating model.",
              size=20, color=WHITE)
     add_text(s, Inches(0.9), Inches(6.4), Inches(11), Inches(0.5),
-             "Yuri Baijnath · CSU Cloud & AI Lead (South Africa), Microsoft  ·  June 2026",
+             "Yuri Baijnath — CSU Cloud & AI Lead (South Africa), Microsoft  ·  2026-06-03",
              size=12, color=CYAN)
 
 

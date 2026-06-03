@@ -380,4 +380,4 @@ Objections in this pillar are usually political — incumbent SI relationships, 
 - VBD references aligned to `csu-ai-vbd-reference-report.md` — re-verify any VERIFY-flagged VBD before customer commit.
 - Pillar definitions from internal Frontier CoE pillar decks (5+1).
 - ATO funding envelope (up to $1M) — Microsoft internal ATO deck; HIGH trust.
-- Author: Yuri Baijnath, CSU Cloud & AI Lead (South Africa), Microsoft.
+- Author: Yuri Baijnath — CSU Cloud & AI Lead (South Africa), Microsoft

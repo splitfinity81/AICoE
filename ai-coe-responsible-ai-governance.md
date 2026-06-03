@@ -1,6 +1,6 @@
 # Responsible AI & Governance — AI CoE (RSA)
 
-**Author:** Yuri Baijnath, CSU Cloud & AI Lead (South Africa), Microsoft
+**Author:** Yuri Baijnath — CSU Cloud & AI Lead (South Africa), Microsoft
 **Audience:** RSA CoE pillar 5 leads, customer CISOs / DPOs / Internal Audit, partner governance leads
 **Companion artefacts:** `AI-CoE-AI-Impact-Assessment.xlsx`, `AI-CoE-AI-Governance-Playbook.docx`
 **Last updated:** 2026-06-03

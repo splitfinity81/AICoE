@@ -1,6 +1,6 @@
 # Sovereign AI for RSA — Long-form Report
 
-**Author:** Yuri Baijnath, CSU Cloud & AI Lead (South Africa), Microsoft
+**Author:** Yuri Baijnath — CSU Cloud & AI Lead (South Africa), Microsoft
 **Audience:** RSA CoE, ATU sellers, regulated-customer sponsors, partner CSAs
 **Companion deck:** `AI-CoE-Sovereign-AI-RSA.pptx`
 **Last updated:** 2026-06-03
